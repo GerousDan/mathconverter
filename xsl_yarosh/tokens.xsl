@@ -65,7 +65,7 @@
 <xsl:template name="mtext">
 	<xsl:variable name="content">
 		<xsl:call-template name="replaceMtextEntities">
-			<xsl:with-param name="content" select="normalize-space(.)"/>
+			<xsl:with-param name="content" select="."/>
 		</xsl:call-template>
 	</xsl:variable>
 	<xsl:text>\text{</xsl:text>
